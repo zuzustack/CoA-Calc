@@ -2,7 +2,7 @@
 
 -   Calc Your EXP from mining,woodcutting and fishing
 
-NOTE: If you want contribution you can dm me on [Instagram](https://instagram/wannssss_)
+NOTE: If you want contribution you can dm me on [Instagram](https://instagram.com/wannssss_)
 
 # Dev
 
