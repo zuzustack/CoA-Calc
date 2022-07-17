@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "rainyhearts";
+  src: url("../assets/font/rainyhearts.eot");
+  src: url("../assets/font/rainyhearts.eot?#iefix") format("embedded-opentype"), url("../assets/font/rainyhearts.woff2") format("woff2"), url("../assets/font/rainyhearts.woff") format("woff"), url("../assets/font/rainyhearts.ttf") format("truetype"), url("../assets/font/rainyhearts.svg#rainyhearts") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rainyhearts", Arial;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.75rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2.25rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+nav {
+  border: 5px #140b28 solid;
+}
+nav .head-nav {
+  padding-inline: 0.5rem;
+  background-color: #f0b986;
+  border: 5px #743f39 solid;
+  border-bottom: none;
+}
+nav .nav-list {
+  display: flex;
+  padding: 0.5rem 1rem;
+  background-color: #743f39;
+  color: white;
+  font-size: 1.5rem;
+}
+nav .nav-list .list-item {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+#app {
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
+  height: calc(100vh - 105px);
+  padding-inline: 5rem;
+  padding-block: 1.5rem;
+}
+#app .main {
+  border: 5px #140b28 solid;
+  background-color: #743f39;
+}
+#app .main .title-content {
+  box-sizing: border-box;
+  padding-inline: 1rem;
+  background-color: #f0b986;
+}
+#app .main .content {
+  padding-inline: 1rem;
+  padding-block: 0.75rem;
+  font-size: 1.5rem;
+  color: white;
+}
+#app .main .content .form {
+  flex-wrap: wrap;
+}
+#app .main .content .form .val {
+  background-color: #f0b986;
+  outline: none;
+  border: 2px #140b28 solid;
+  font-size: 1.5rem;
+}
+#app .main .content button {
+  cursor: pointer;
+  background-color: #e4a672;
+  border: 2px #140b28 solid;
+  outline: none;
+  font-size: 1.25rem;
+  padding-inline: 0.5rem;
+  margin-right: 1rem;
+}/*# sourceMappingURL=style.css.map */

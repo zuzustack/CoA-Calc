@@ -1,0 +1,164 @@
+@use "variables" as v;
+
+@font-face {
+    font-family: "rainyhearts";
+    src: url("../assets/font/rainyhearts.eot");
+    src: url("../assets/font/rainyhearts.eot?#iefix")
+            format("embedded-opentype"),
+        url("../assets/font/rainyhearts.woff2") format("woff2"),
+        url("../assets/font/rainyhearts.woff") format("woff"),
+        url("../assets/font/rainyhearts.ttf") format("truetype"),
+        url("../assets/font/rainyhearts.svg#rainyhearts") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Rainyhearts", Arial;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.75rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2.25rem;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 0.75rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mr-1 {
+    margin-right: 0.25rem;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+.mr-3 {
+    margin-right: 0.75rem;
+}
+
+.mr-4 {
+    margin-right: 1rem;
+}
+
+.ml-1 {
+    margin-left: 0.25rem;
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+
+.ml-3 {
+    margin-left: 0.75rem;
+}
+
+.ml-4 {
+    margin-left: 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+// Navbar
+nav {
+    border: 5px v.$vDark-color solid;
+    .head-nav {
+        padding-inline: 0.5rem;
+        background-color: v.$light-color;
+        border: 5px v.$darker-color solid;
+        border-bottom: none;
+    }
+    .nav-list {
+        display: flex;
+        padding: 0.5rem 1rem;
+        background-color: v.$darker-color;
+        color: white;
+        font-size: 1.5rem;
+
+        .list-item {
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+
+#app {
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
+    height: calc(100vh - 105px);
+
+    padding-inline: 5rem;
+    padding-block: 1.5rem;
+
+    .main {
+        border: 5px v.$vDark-color solid;
+        background-color: v.$darker-color;
+        .title-content {
+            box-sizing: border-box;
+            padding-inline: 1rem;
+            background-color: v.$light-color;
+        }
+
+        .content {
+            padding-inline: 1rem;
+            padding-block: 0.75rem;
+            font-size: 1.5rem;
+            color: white;
+            .form {
+                flex-wrap: wrap;
+                .val {
+                    background-color: v.$light-color;
+                    outline: none;
+                    border: 2px v.$vDark-color solid;
+                    font-size: 1.5rem;
+                }
+            }
+
+            button {
+                cursor: pointer;
+                background-color: v.$normal-color;
+                border: 2px v.$vDark-color solid;
+                outline: none;
+                font-size: 1.25rem;
+                padding-inline: 0.5rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
