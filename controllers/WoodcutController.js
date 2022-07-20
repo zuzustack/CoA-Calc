@@ -39,6 +39,30 @@ export class WoodcutController {
 
         $(".calc").click(function (e) {
             let result = wood[$("#select").val()].exp * $("#need").val();
+
+            result = result.toString();
+            let arr = result.split("").reverse();
+
+            let count = 0;
+            if (result.length > 3) {
+                result = "";
+                arr.forEach((e) => {
+                    if (count % 3 == 0 && count != 0) {
+                        result += ",";
+                    }
+
+                    result += e;
+
+                    count++;
+                });
+            }
+
+            arr = result.split("").reverse();
+            result = "";
+            arr.forEach((e) => {
+                result += e;
+            });
+
             $(".result").html(`${result}`);
         });
     }
