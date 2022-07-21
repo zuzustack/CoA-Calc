@@ -126,7 +126,8 @@ nav {
     padding-inline: 5rem;
     padding-block: 1.5rem;
 
-    .main {
+    #main {
+        margin-bottom: 3.5rem;
         border: 5px v.$vDark-color solid;
         background-color: v.$darker-color;
         .title-content {
@@ -158,6 +159,28 @@ nav {
                 font-size: 1.25rem;
                 padding-inline: 0.5rem;
                 margin-right: 1rem;
+            }
+        }
+    }
+
+    #result {
+        border: 5px v.$vDark-color solid;
+        background-color: v.$darker-color;
+        .title-content {
+            box-sizing: border-box;
+            padding-inline: 1rem;
+            background-color: v.$light-color;
+        }
+
+        .content {
+            padding-inline: 1rem;
+            padding-block: 0.75rem;
+            font-size: 1.5rem;
+            color: white;
+            .require-item {
+                li {
+                    margin-left: 1rem;
+                }
             }
         }
     }

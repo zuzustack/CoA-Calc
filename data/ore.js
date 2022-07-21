@@ -4,7 +4,7 @@ export const ore = [
         exp: 10,
     },
     {
-        name: "Bronze Ore",
+        name: "Copper Ore",
         exp: 10,
     },
     {

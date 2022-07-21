@@ -115,31 +115,32 @@ nav .nav-list .list-item {
   padding-inline: 5rem;
   padding-block: 1.5rem;
 }
-#app .main {
+#app #main {
+  margin-bottom: 3.5rem;
   border: 5px #140b28 solid;
   background-color: #743f39;
 }
-#app .main .title-content {
+#app #main .title-content {
   box-sizing: border-box;
   padding-inline: 1rem;
   background-color: #f0b986;
 }
-#app .main .content {
+#app #main .content {
   padding-inline: 1rem;
   padding-block: 0.75rem;
   font-size: 1.5rem;
   color: white;
 }
-#app .main .content .form {
+#app #main .content .form {
   flex-wrap: wrap;
 }
-#app .main .content .form .val {
+#app #main .content .form .val {
   background-color: #f0b986;
   outline: none;
   border: 2px #140b28 solid;
   font-size: 1.5rem;
 }
-#app .main .content button {
+#app #main .content button {
   cursor: pointer;
   background-color: #e4a672;
   border: 2px #140b28 solid;
@@ -147,4 +148,22 @@ nav .nav-list .list-item {
   font-size: 1.25rem;
   padding-inline: 0.5rem;
   margin-right: 1rem;
+}
+#app #result {
+  border: 5px #140b28 solid;
+  background-color: #743f39;
+}
+#app #result .title-content {
+  box-sizing: border-box;
+  padding-inline: 1rem;
+  background-color: #f0b986;
+}
+#app #result .content {
+  padding-inline: 1rem;
+  padding-block: 0.75rem;
+  font-size: 1.5rem;
+  color: white;
+}
+#app #result .content .require-item li {
+  margin-left: 1rem;
 }/*# sourceMappingURL=style.css.map */

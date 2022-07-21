@@ -2,7 +2,7 @@ import { fish } from "../data/fish.js";
 
 export class FishingController {
     showView() {
-        $("#app").html(`
+        $("#main").html(`
         <div class="main">
         <h4 class="title-content">Fishing Exp Calc</h4>
         <div class="content">
@@ -26,7 +26,7 @@ export class FishingController {
             </div>
             <div class="d-flex mt-3">
                 <button class="calc">Calc</button>
-                <p>you get exp: <span class="result"></span></p>
+
             </div>
         </div>
     </div>
@@ -45,10 +45,11 @@ export class FishingController {
             let result = fish[$("#select").val()].exp * $("#need").val();
 
             result = result.toString();
-            let arr = result.split("").reverse();
 
-            let count = 0;
             if (result.length > 3) {
+                let arr = result.split("").reverse();
+                let count = 0;
+
                 result = "";
                 arr.forEach((e) => {
                     if (count % 3 == 0 && count != 0) {
@@ -59,15 +60,18 @@ export class FishingController {
 
                     count++;
                 });
+
+                arr = result.split("").reverse();
+                result = "";
+                arr.forEach((e) => {
+                    result += e;
+                });
             }
 
-            arr = result.split("").reverse();
-            result = "";
-            arr.forEach((e) => {
-                result += e;
-            });
-
-            $(".result").html(`${result}`);
+            $(".exp-player-get").html(`${result}`);
+            $(".require-item").html(
+                `<li>${$(".bait").html()} : ${$("#need").val()}</li>`
+            );
         });
 
         $("#select").change(function (e) {
